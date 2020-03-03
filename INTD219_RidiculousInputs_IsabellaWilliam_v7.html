@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>bloom.</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+  	<img class="homepage" src="./Images/Homepage Bloom.png" alt="Homepage" style="width:100%; height:auto">
+
+    <img class="background" src="./Images/form background.png" alt="form background" style="width:100%; height:auto">
+
+
+  <!-- Test -->
+
+<div class="component">
+<!-- <h3>Get your first bouquet!</h3> -->
+  <div class="form">
+      <h3>Get your first bouquet!</h3>
+      <form action="">
+        <p>
+          <label for="">First name</label>
+          <input class="backward" type="text" name="first name" placeholder="First Name">
+        </p>
+        <p>
+          <label for="">Last Name</label>
+          <input class="backward" type="text" name="last name" placeholder="Last Name">
+        </p>
+        <p>
+          <label for="">Email Address</label>
+          <input class="backward" type="text" name="email" placeholder="name@example.com">
+        </p>
+        <p>
+          <label for="">Phone Number</label>
+          <input class="backward" type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </p>
+        <p>
+          <label for="">Password</label>
+          <input class="backward" type="password" name="password" placeholder="Enter Password">
+        </p>
+        <p>
+          <label for="">Confirm Password</label>
+          <input class="backward" type="password" name="password" placeholder="Confirm Password">
+        </p>
+
+        <div class="check">
+          <input type="checkbox">
+          <label for="">Yes, I want to receive emails about promotions.</label><br>
+          <input type="checkbox">
+            <label for="">I agree to the <strong>Terms, Privacy Policy and fees.</strong></label><br><br>
+        </div> <!-- class check ends -->
+
+        <p class="submit">
+          <button>Sign Up</button>
+        </p>
+
+      </form>
+      </div> <!-- class form ends -->
+    </div>  <!-- class component ends -->
+  </body>
+
+</html>
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 1rem;
+}
+h3 {
+  margin: 0;
+  font-family: font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+/*  grid-template-rows: repeat(6, 1fr);*/
+  grid-gap: 20px;
+}
+
+form label {
+  display: block;
+}
+
+form p {
+  margin: 0;
+}
+
+label{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+input,
+textarea,
+button {
+  width: 80%;
+  border: 1px solid #777;
+  border-radius: 6px; 
+  font-family: 'Open Sans', sans-serif;
+  padding: 1em;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid pink;
+}
+
+button {
+  background: salmon;
+  width: 60%;
+  border: 0;
+}
+button:hover, button:focus {
+  background: pink;
+  outline: 0;
+}
+
+/*call out classes*/
+
+.component {
+  position: absolute;
+  top: 388%;
+  left: 50%;
+/*  top: 2300px;*/
+  /*left: 300px;*/
+  transform: translate(-50%, -50%);
+  background-color: white; 
+    border-radius: 20px; 
+}
+
+.form {
+
+  margin: 50px; 
+}
+
+.submit button{
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+}
+
+.backward:focus {
+  position: relative;
+  transform: scaleX(-1);
+  transform: scaleX(-1);
+  webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+.form .check input:focus{
+  outline: none;
+}
+
+
+
+
+</style> <!-- end of style -->
+
+
+<script>
+
+window.addEventListener("keyup", checkKeyPress, false);
+
+function checkKeyPress(key){
+  if (key.keyCode =="65"){
+    alert("Hello, how are you today?")
+  }
+  if (key.keyCode =="69"){
+    window.open(),
+    window.open(),
+    window.open()
+  }
+  if (key.keyCode =="73"){
+    window.open('https://www.youtube.com/watch?v=mzCNluDwIb4', '_blank', 'height=1000, width=1200')
+  }
+  if (key.keyCode =="85"){
+    window.location.reload(true)
+  }
+  if (key.keyCode =="79"){
+    window.open('https://i.pinimg.com/originals/8a/a9/40/8aa9408f6aba57ed53749c6ea279a953.jpg', '_blank', 'height=1000, width=1200')
+  }
+}
+
+
+</script>
+
+
